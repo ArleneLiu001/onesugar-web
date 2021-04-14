@@ -1,0 +1,27 @@
+{
+  "name": "doc-onesugar-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArleneLiu001/doc-onesugar-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArleneLiu001/doc-onesugar-web/issues"
+  },
+  "homepage": "https://github.com/ArleneLiu001/doc-onesugar-web#readme",
+  "dependencies": {
+    "ant-design-vue": "^1.7.4"
+  }
+}
