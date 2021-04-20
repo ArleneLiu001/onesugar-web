@@ -16,14 +16,28 @@ function geteduSidebar () {
     },
   ]
 }
+//tech
 function getTechSidebar () {
   return [
     {
-      title: '初识 JS',
+      title: 'JS高级程序设计',
       collapsable: false,
       children: [
-        'chapter1/',
-        'chapter1/start'
+        'chapter1',
+        'chapter2',
+        'chapter3',
+        'chapter5',
+        'chapter6',
+        'chapter7',
+        'chapter8',
+        'chapter9',
+        'chapter10',
+        'chapter13',
+        'chapter14',
+        'chapter16',
+        'chapter17',
+        'chapter20',
+        'chapter21'
       ]
     },
   ]
