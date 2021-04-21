@@ -17,7 +17,7 @@ module.exports = {
         text: '前端',
         ariaLabel: '前端技术',
         items: [
-          { text: 'JS基础', link: '/tech/js/' },
+          { text: 'JS基础', link: '/tech/js/chapter1' },
           { text: 'TypeScript', link: '/tech/ts/' },
           { text: 'Vue3', link: '/tech/vueNext/' },
           { text: 'React', link: '/tech/react/' },
