@@ -11,21 +11,24 @@
     .item
         height: 50px;
         padding: 20px 40px;
-        border: 1px solid #eaeefb;
+        border: 1px solid #eaeefb; 
         justify-items: center;
         line-height: 50px;
         color: #1f2f3d;
         cursor: pointer;
         border-radius: 5px;
-        // transition: all .3s ease-in-out;
-        // &:hover{
-         
-        // }
+        transition: 0.3s;
+        margin-bottom:20px
+    .item:hover{
+         transform :scale(1.1)
+        }
+        
  .part
    display flex
    justify-content:space-between
    padding:10px 0
    border-top: 1px solid #eaecef;
+   flex-wrap: wrap;
    .hot
      width 65%
      margin:0
@@ -41,8 +44,17 @@
           color: rgba(0, 0, 0, 0.45)
    .person-info
     width 200px
-    height 250px
+    height 275px
     margin: 16px 0;
     font-size 14px
     border: 1px solid #eaecef;
+    .avtor
+       width 200px
+       height 220px
+       border-bottom: 1px solid #eaecef;
+       color:#999
+    .user-detail
+      padding 5px
+      color #999  
+    
      

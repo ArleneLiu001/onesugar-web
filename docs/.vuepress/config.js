@@ -24,7 +24,8 @@ module.exports = {
           { text: '博客', link: '/ts-axios/chapter1/' },
         ]
       },
-      { text: '教育', link: '/edu/part1/', target: '_blank', },
+      { text: '教育', link: '/edu/chapter1',  },
+      { text: '阅读笔记', link: '/read/chapter1', },
       { text: 'ts-axios', link: '/ts-axios/chapter1/' },
     ],
     sidebar: barObj,

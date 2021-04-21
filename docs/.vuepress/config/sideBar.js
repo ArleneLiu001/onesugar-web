@@ -1,17 +1,43 @@
 var barObj = {
   '/ts-axios/': getTsAxiosSidebar(),
   '/tech/js/':getTechSidebar(),
-  '/edu/':geteduSidebar()
-
+  '/edu/':geteduSidebar(),
+  '/read/':getreadSidebar()
 }
 function geteduSidebar () {
   return [
     {
-      title: 'Edu 社交',
+      title: '教育熊孩子',
       collapsable: false,
       children: [
-        'part1/',
-        'part1/start'
+        'chapter1',
+        'chapter2',
+        'chapter3',
+        'chapter5',
+        'chapter6',
+        'chapter7',
+        'chapter8',
+        'chapter9',
+        'chapter10',
+      ]
+    },
+  ]
+}
+function getreadSidebar () {
+  return [
+    {
+      title: '阅读笔记',
+      collapsable: false,
+      children: [
+        'chapter1',
+        'chapter2',
+        'chapter3',
+        'chapter5',
+        'chapter6',
+        'chapter7',
+        'chapter8',
+        'chapter9',
+        'chapter10',
       ]
     },
   ]
