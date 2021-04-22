@@ -21,7 +21,7 @@ module.exports = {
           { text: 'TypeScript', link: '/tech/ts/' },
           { text: 'Vue3', link: '/tech/vueNext/' },
           { text: 'React', link: '/tech/react/' },
-          { text: '博客', link: '/ts-axios/chapter1/' },
+          { text: '博客', link: '/blog/chapter10' },
         ]
       },
       { text: '教育', link: '/edu/chapter1',  },

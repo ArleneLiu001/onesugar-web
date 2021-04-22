@@ -33,10 +33,10 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
       {name:'TypeScript',link:'/tech/ts/chapter1/'},
       {name:'Vue3',link:'/tech/vueNext/chapter1/'},
       {name:'React',link:'/tech/react/chapter1/'},
-      {name:'博客',link:'/ts-axios/chapter1/'},],
+      {name:'博客',link:'blog/chapter10'},],
       newList:[
         {name:'管理孩子玩游戏',link:'/edu/chapter1',date:'2021-04-21'},
-        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20'},
+        {name:'拖拽表格',link:'blog/chapter10',date:'2021-04-22'},
        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20'},
         {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20'},
         {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20'}
