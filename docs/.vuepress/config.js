@@ -1,7 +1,7 @@
 // import barObj from './config/sideBar'
 const barObj = require('./config/sideBar.js')
 module.exports = {
-  description: '专注于日常学习与总结。',
+  description: '专注于日常学习与总结',
   title: "Arlene",
   // 记录在工作中遇到的一些问题的解决方案以及一些新知识，新技术，和在生活中的一些教育相关问题.
   base: '/',

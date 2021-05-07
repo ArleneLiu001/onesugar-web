@@ -4,7 +4,7 @@ home: true
 footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
 ---
 <div class="base">
- <a v-for="(item,index) in lists" class="item" :key="index" :href="item.link">{{item.name}}</a>
+ <a v-for="(item,index) in lists" class="item" :key="index" :href="item.link"><i class="iconfont el-icon-my-001-surprise"></i>{{item.name}}</a>
 </div>
 <div class="part">
 
@@ -28,6 +28,7 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
 
 <script>
   import Clock from './clock'
+  // import "/iconfont/iconfont"
  export default {
    components:{
      Clock
