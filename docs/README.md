@@ -17,7 +17,8 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
   <div class="more"><a :href="moreUrl">更多文章...</a></div>
  </ul>
   <div class="person-info">
-    <img class="avtor" src="/avtor.jpg"/>
+    <!-- <img class="avtor" src="/avtor.jpg"/> -->
+    <div><Clock/></div>
     <div class="user-detail">
       <div>mobile：13028813587</div>
       <div>email：arleneliu001@163.com</div>
@@ -26,7 +27,11 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
 </div>
 
 <script>
+  import Clock from './clock'
  export default {
+   components:{
+     Clock
+   },
   data(){
     return {
       lists:[{name:'js基础',link:'/tech/js/chapter1/'},
