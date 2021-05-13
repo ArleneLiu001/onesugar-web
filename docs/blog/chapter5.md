@@ -82,3 +82,81 @@ Vue.use(usoftaccount)
 // 或者直接导入js文件
 <script src="./dist/usoftaccount.js"></script>
 ```
+#### 知识补充
+  ##### Vue.extend 为什么使用 extend?
+  在 vue 项目中，我们有了初始化的根实例后，所有页面基本上都是通过 router 来管理，组件也是通过 import 来进行局部注册，所以组件的创建我们不需要去关注，相比 extend 要更省心一点点。但是这样做会有几个缺点：
+
+  组件模板都是事先定义好的，如果我要从接口动态渲染组件怎么办？
+  所有内容都是在 #app 下渲染，注册组件都是在当前位置渲染。如果我要实现一个类似于 window.alert() 提示组件要求像调用 JS 函数一样调用它，该怎么办？
+  这时候，Vue.extend + vm.$mount 组合就派上用场了。
+  
+  ###### 简单示例
+```JS
+import Vue from 'vue'
+
+const testComponent = Vue.extend({
+  template: '<div>{{ text }}</div>',
+  data: function () {
+    return {
+      text: 'extend test'
+    }
+  }
+})
+```
+然后我们将它手动渲染：
+```JS
+const extendComponent = new testComponent().$mount()
+```
+这时候，我们就将组件渲染挂载到 body 节点上了。
+
+我们可以通过 $el 属性来访问 extendComponent 组件实例：
+document.body.appendChild(extendComponent.$el)
+ ### 开发实例
+ ```JS
+ import Vue from 'vue'
+import UMessage from './UMessage.vue'
+
+const MESSAGE_TYPES = ['success', 'warning', 'info', 'error']
+
+const UMessageConstructor = Vue.extend(UMessage)
+
+let instance
+
+const Message = (options = {}) => {
+  if (typeof options === 'string') {
+    options = {
+      message: options
+    }
+  }
+
+  instance && instance.close()
+
+  instance = new UMessageConstructor({
+    data: options
+  })
+
+  instance.vm = instance.$mount()
+  document.body.appendChild(instance.vm.$el)
+  instance.vm.visible = true
+  instance.dom = instance.vm.$el
+  return instance.vm
+}
+
+MESSAGE_TYPES.forEach(type => {
+  Message[type] = options => {
+    if (typeof options === 'string') {
+      options = {
+        message: options
+      }
+    }
+    options.type = type
+    return Message(options)
+  }
+})
+
+export default Message
+
+
+使用挂载时：
+ Vue.prototype.$message = Message
+ ```
