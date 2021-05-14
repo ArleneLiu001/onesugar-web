@@ -25,7 +25,7 @@ export default {
   },
   methods:{
     loadTime(){
-       this.initNumXY(103, 70, 20, 20)
+       this.initNumXY(51.5, 35, 20, 20)
        this.hour_line = document.getElementById('hour-line')
       this.minute_line = document.getElementById('minute-line')
       this.second_line = document.getElementById('second-line')
@@ -126,10 +126,10 @@ export default {
 </script>
 <style lang="stylus">
    .clock {
-        width: 200px;
-        height: 200px;
-        border: 10px solid #14a9bd;
-        box-shadow: 0px 0px 20px 3px #14a9bd inset;
+        width: 100px;
+        height: 100px;
+        border: 5px solid #45a2a7;
+        box-shadow: 0px 0px 5px 3px #45a2a7 inset;
         border-radius: 50%;
         position: relative;
         margin: 5px auto;
@@ -140,57 +140,57 @@ export default {
       .clock-num {
         width: 18px;
         height: 18px;
-        font-size: 18px;
+        font-size: 8px;
         text-align: center;
         line-height: 20px;
         position: absolute;
         z-index: 8;
         color: #555;
-        font-family: fantasy; /* 字体 */
+        // font-family: fantasy; /* 字体 */
       }
       .em_num {
-        font-size: 20px;
+        font-size: 8px;
       }
       .clock-line {
         position: absolute;
         z-index: 20;
       }
       .hour-line {
-        width: 50px;
+        width: 25px;
         height: 2px;
-        top: 99px;
-        left: 100px;
+        top: 49.5px;
+        left: 50px;
         background-color: #000;
         border-radius: 2px;
         transform-origin: 0 50%;
-        box-shadow: 1px -3px 8px 3px #aaa;
+        box-shadow: 1px -3px 5px 1px #aaa;
       }
       .minute-line {
-        width: 65px;
+        width: 32.5px;
         height: 2px;
-        top: 99.5px;
-        left: 95px;
+        top: 49.5px;
+        left: 47.5px;
         background-color: #000;
         transform-origin: 7.692% 50%;
-        box-shadow: 1px -3px 8px 1px #aaa;
+        box-shadow: 1px -3px 5px 1px #aaa;
       }
       .second-line {
-        width: 75px;
+        width: 37.5px;
         height: 1px;
-        top: 99.75px;
-        left: 90px;
+        top: 49.5px;
+        left: 45px;
         background-color: #f60;
         transform-origin: 11.765% 50%;
-        box-shadow: 1px -3px 7px 1px #bbb;
+        box-shadow: 1px -3px 3px 1px #bbb;
       }
       .origin {
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
         background-color: #14a9bd;
         position: absolute;
-        top: 95px;
-        left: 95px;
+        top: 47.5px;
+        left: 47.5px;
         z-index: 14;
       }
       /* 刻度 */
@@ -203,17 +203,17 @@ export default {
       }
       #list li {
         list-style: none;
-        width: 2px;
-        height: 12px;
+        width: 1px;
+        height: 6px;
         position: absolute;
-        left: 99.5px;
-        top: 4px;
-        transform-origin: center 98px; /* 相对元素左上角的位置 */
+        left: 49.6px;
+        top: 2px;
+        transform-origin: center 49px; /* 相对元素左上角的位置 */
         background-color: #555;
       }
 
       #list li:nth-child(5n + 1) {
-        width: 4px;
-        height: 15px;
+        width: 2px;
+        height: 7.5px;
       }
 </style>

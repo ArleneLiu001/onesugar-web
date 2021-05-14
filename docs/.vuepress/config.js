@@ -1,6 +1,26 @@
 // import barObj from './config/sideBar'
 const barObj = require('./config/sideBar.js')
 module.exports = {
+  head:[
+    // [
+    //   'script',
+    //   {src:'/js/changyan.js',type:"text/javascript", charset:"UTF-8"},
+    //   {src:'/js/adapter.min.js'},
+
+    // ],
+    // [
+    //   'script',
+    //   {src:'/js/v3.js',type:"text/javascript", charset:"UTF-8"},
+    // ],
+    // [
+    //   'script',
+    //   {src:'/js/adapter.min.js',type:"text/javascript", charset:"UTF-8"},
+    // ],
+    // [
+    //   'html',
+    //   {src:'/html/index.html'},
+    // ]
+  ],
   description: '专注于日常学习与总结',
   title: "Arlene",
   // 记录在工作中遇到的一些问题的解决方案以及一些新知识，新技术，和在生活中的一些教育相关问题.
