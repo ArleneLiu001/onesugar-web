@@ -18,26 +18,36 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
   </li>
   <div class="more"><a :href="moreUrl">更多文章...</a></div>
  </ul>
-  <div class="person-info">
-   <div class="person-title">个人信息</div>
-    <img class="avtor" src="/avtor.jpg"/>
-    <!-- <div><Clock/></div> -->
-    <div class="user-detail">
-      <div>mobile：13028813587</div>
-      <div>email：arleneliu001@163.com</div>
+ <div>
+    <div class="person-info">
+        <img class="avtor" src="/avtor.jpg"/>
+        <!-- <div><Clock/></div> -->
+        <div class="user-name">Arlene</div>
+        <div class="user-detail">
+          <a v-for="(item,index) in iconAbout" :key="index" class="person-icon iconfont"  :class="item.icon" :href="item.href" >
+          </a>
+        </div>
+        <div class="aboutMe">关于我</div>
     </div>
-  </div>
+     <div class="person-info mt20">
+      <p class="u-fontweight">每日语录：</p>
+      <div class="lineH25">{{dayMessage}}</div>
+    </div>
+ </div>
+
 </div>
 
 <script>
   import Clock from './clock'
-  
  export default {
    components:{
-     Clock
+     Clock,
    },
   data(){
     return {
+      dayMessage:"生命从来不曾离开过孤独而独立存在。无论是我们出生，我们成长，我们相爱还是我们成功失败，直到最后的最后，孤独犹如影子一样存在于生命一隅。",
+      iconAbout:[{name:'git',icon:'el-icon-my-github',href:'https://github.com/ArleneLiu001/onesugar-web'},
+      {name:'zhi',icon:'el-icon-my-zhifubao'},{name:'qq',icon:'el-icon-my-qq'},{name:'wechat',icon:'el-icon-my-wechat'},{name:'email',icon:'el-icon-my-youxiang',href:"mailto:arleneliu001@163.com"}],
       lists:[{name:'js基础',link:'/tech/js/chapter1/',icon:'el-icon-my-js',},
       {name:'TypeScript',link:'/tech/ts/chapter1/',icon:'el-icon-my-tsx',},
       {name:'Vue3',link:'/tech/vueNext/chapter1/',icon:'el-icon-my-vuejs-line',},
