@@ -17,5 +17,6 @@ WinSCP 是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户�
 * 提供 Windows Explorer 与 Norton Commander 界面  
 * 可选地存储会话信息  
 * 可将设置存在配置文件中而非注册表中，适合在移动介质上操作  
-
+* 
+<commetPart/>
 

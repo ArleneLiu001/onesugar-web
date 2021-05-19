@@ -29,9 +29,12 @@
 ```
 <style>
   .arrow{
-    width:0;
+  width:0;
   height:0;
   border:10px solid transparent; 
   border-top-color:black; 
   }
 </style>
+<div class="mt20">
+<commetPart></commetPart>
+</div>

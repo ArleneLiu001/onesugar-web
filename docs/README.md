@@ -10,15 +10,7 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
  </div>
 </div>
 <div class="part">
- <ul class="hot">
-   <div class="hot-title">最新文章</div>
-  <li v-for="(item,index) in newList" class="item" :key="index" >
-  <a :href="item.link">{{item.name}}</a>
-  <div class="date-info">{{item.date}}</div>
-  </li>
-  <div class="more"><a :href="moreUrl">更多文章...</a></div>
- </ul>
- <div>
+<div class="personal-part">
     <div class="person-info">
         <img class="avtor" src="/avtor.jpg"/>
         <!-- <div><Clock/></div> -->
@@ -32,8 +24,21 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
      <div class="person-info mt20">
       <p class="u-fontweight">每日语录：</p>
       <div class="lineH25">{{dayMessage}}</div>
+      <a href="/motto/chapter1/">更多...</a>
     </div>
  </div>
+ <ul class="hot">
+   <div class="hot-title">最新文章</div>
+  <li v-for="(item,index) in newList" class="item" :key="index" @click="goLink(item)">
+  <div>
+    <a :href="item.link">{{item.name}}</a>
+    <article-tag :tagType="item.tag"/>
+  </div>
+  <div class="date-info">{{item.date}}</div>
+  </li>
+  <div class="more"><a :href="moreUrl">更多文章...</a></div>
+ </ul>
+  <div class="clear"></div>
 
 </div>
 
@@ -54,13 +59,19 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
       {name:'React',link:'/tech/react/chapter1/',icon:'el-icon-my-react',},
       {name:'博客',link:'blog/chapter10',icon:'el-icon-my-bokeyuan',},],
       newList:[
-        {name:'管理孩子玩游戏',link:'/edu/chapter1',date:'2021-04-21'},
-        {name:'拖拽表格',link:'blog/chapter10',date:'2021-04-22'},
-       {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20'},
-        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20'},
-        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20'}
+        {name:'管理孩子玩游戏',link:'/edu/chapter1',date:'2021-04-21',tag:5},
+        {name:'拖拽表格',link:'blog/chapter10',date:'2021-04-22',tag:1},
+       {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20',tag:1},
+        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20',tag:1},
+        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20',tag:1}
       ],
       moreUrl:'/tech/js/chapter1/'
+    }
+  },
+  methods:{
+    goLink(item){
+      console.log(item)
+      window.location.href = item.link
     }
   }
  }

@@ -4,6 +4,7 @@ var barObj = {
   '/edu/':geteduSidebar(),
   '/read/':getreadSidebar(),
   '/blog/':getblogSidebar(),
+  '/motto/':getMottoSidebar()
 
 }
 function getblogSidebar () {
@@ -44,10 +45,32 @@ function geteduSidebar () {
     },
   ]
 }
+//阅读
 function getreadSidebar () {
   return [
     {
       title: '阅读笔记',
+      collapsable: false,
+      children: [
+        'chapter1',
+        'chapter2',
+        'chapter3',
+        'chapter4',
+        'chapter5',
+        'chapter6',
+        'chapter7',
+        'chapter8',
+        'chapter9',
+        'chapter10',
+      ]
+    },
+  ]
+}
+//座右铭
+function getMottoSidebar () {
+  return [
+    {
+      title: '每日语录',
       collapsable: false,
       children: [
         'chapter1',
