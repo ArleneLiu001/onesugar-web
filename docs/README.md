@@ -34,7 +34,7 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
      <div class="person-info mt20">
       <p class="u-fontweight">每日语录：</p>
       <div class="lineH25">{{dayMessage}}</div>
-      <a href="/motto/chapter1/">更多...</a>
+      <a href="/motto/2021/March/chapter1">更多...</a>
     </div>
  </div>
  <ul class="hot">

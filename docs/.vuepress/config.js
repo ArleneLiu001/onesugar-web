@@ -9,6 +9,10 @@ module.exports = {
       'script',
       {src:'//unpkg.com/valine/dist/Valine.min.js',type:"text/javascript", charset:"UTF-8"},
     ],
+    [
+      'link',
+      {rel:'icon',href:'/logo.jpg'}
+    ]
     // [
     //   'script',
     //   {src:'/js/adapter.min.js',type:"text/javascript", charset:"UTF-8"},
@@ -19,7 +23,7 @@ module.exports = {
     // ]
   ],
   description: '专注于日常学习与总结',
-  title: "专注于日常学习与总结",
+  title: "Arlene个人网站",
   // 记录在工作中遇到的一些问题的解决方案以及一些新知识，新技术，和在生活中的一些教育相关问题.
   base: '/',
   themeConfig: {
