@@ -66,27 +66,6 @@ function getreadSidebar () {
     },
   ]
 }
-//座右铭
-function getMottoSidebar () {
-  return [
-    {
-      title: '每日语录',
-      collapsable: false,
-      children: [
-        'chapter1',
-        'chapter2',
-        'chapter3',
-        'chapter4',
-        'chapter5',
-        'chapter6',
-        'chapter7',
-        'chapter8',
-        'chapter9',
-        'chapter10',
-      ]
-    },
-  ]
-}
 //tech
 function getTechSidebar () {
   return [
@@ -109,6 +88,49 @@ function getTechSidebar () {
         'chapter17',
         'chapter20',
         'chapter21'
+      ]
+    },
+  ]
+}
+//座右铭
+function getMottoSidebar () {
+  return [
+    {
+      title: '2021年3月',
+      collapsable: true,
+      children: [
+        '2021/March/chapter1',
+      ]
+    },
+    {
+      title: '2021年4月',
+      collapsable: true,
+      children: [
+        '2021/April/chapter2',
+        '2021/April/chapter3',
+        '2021/April/chapter4',
+        '2021/April/chapter5',
+        '2021/April/chapter6',
+        '2021/April/chapter7',
+        '2021/April/chapter8',
+        '2021/April/chapter9',
+        '2021/April/chapter10',
+      ]
+    },
+    {
+      title: '2021年5月',
+      collapsable: false,
+      children: [
+        '2021/May/chapter1',
+        '2021/May/chapter2',
+        '2021/May/chapter3',
+        '2021/May/chapter4',
+        '2021/May/chapter5',
+        '2021/May/chapter6',
+        '2021/May/chapter7',
+        '2021/May/chapter8',
+        '2021/May/chapter9',
+        '2021/May/chapter10',
       ]
     },
   ]

@@ -5,7 +5,7 @@
 <script>
 export default {
   name:'live2D',
- created(){
+ mounted(){
    setTimeout(() => {
     window.L2Dwidget.init({
       pluginRootPath: '/live2dw/',
