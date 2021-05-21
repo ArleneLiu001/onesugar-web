@@ -22,7 +22,9 @@ function getblogSidebar () {
         'chapter4',
         'chapter3',
         'chapter2',
-        'chapter1',  
+        'chapter1',
+        'chapter11',
+        'chapter12',
       ]
     },
   ]
