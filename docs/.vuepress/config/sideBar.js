@@ -108,6 +108,7 @@ function getMottoSidebar () {
       title: '2021年3月',
       collapsable: true,
       children: [
+        '2021/March/chapter2',
         '2021/March/chapter1',
       ]
     },

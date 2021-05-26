@@ -33,7 +33,7 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
     <!--  day-motto -->
      <div class="person-info mt20">
       <p class="u-fontweight">每日语录：</p>
-      <div class="lineH25">{{dayMessage}}</div>
+      <div class="lineH25" v-html="dayMessage"></div>
       <a href="/motto/2021/March/chapter1">更多...</a>
     </div>
  </div>
@@ -60,7 +60,7 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
    },
   data(){
     return {
-      dayMessage:"生命从来不曾离开过孤独而独立存在。无论是我们出生，我们成长，我们相爱还是我们成功失败，直到最后的最后，孤独犹如影子一样存在于生命一隅。",
+      dayMessage:"从前 我的爱复杂,动荡<br/>现在我只爱一些简单的事物<br/>一只其貌不扬的小狗<br/>或一朵深夜里突然绽放的小花儿<br/>就已带给我足够的惊喜 <br/>从前的我常常因爱而愤怒<br/>现在 我的肝火已被雨水带入潮湿的土地<br/>至于足球和诗歌,今后依然会是我的挚爱<br/>但已没有什么 可以再大过我的生命<br/>为了这份宁静 我已准备了半个世纪<br/>就这样爱着 度过余生",
       iconAbout:[{name:'git',icon:'el-icon-my-github',href:'https://github.com/ArleneLiu001/onesugar-web',},
       // {name:'zhi',icon:'el-icon-my-zhifubao'},
       {name:'qq',icon:'el-icon-my-qq',img:'/qq.jpg'},
