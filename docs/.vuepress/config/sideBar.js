@@ -7,6 +7,7 @@ var barObj = {
   '/motto/':getMottoSidebar()
 
 }
+// 博客
 function getblogSidebar () {
   return [
     {
@@ -22,7 +23,6 @@ function getblogSidebar () {
         'chapter4',
         'chapter3',
         'chapter2',
-        'chapter1',
         'chapter11',
         'chapter12',
         'chapter13',
@@ -31,8 +31,20 @@ function getblogSidebar () {
         'chapter16',
       ]
     },
+    {
+      title: 'CSS',
+      collapsable: false,
+      children: [
+        'CSS/chapter1',
+        'CSS/chapter2',
+        'CSS/chapter3',
+        'CSS/chapter4',
+        'CSS/chapter5',
+      ]
+    },
   ]
 }
+// 教育
 function geteduSidebar () {
   return [
     {
