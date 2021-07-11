@@ -1,10 +1,10 @@
 var barObj = {
   '/ts-axios/': getTsAxiosSidebar(),
-  '/tech/js/':getTechSidebar(),
-  '/edu/':geteduSidebar(),
-  '/read/':getreadSidebar(),
-  '/blog/':getblogSidebar(),
-  '/motto/':getMottoSidebar()
+  '/tech/js/': getTechSidebar(),
+  '/edu/': geteduSidebar(),
+  '/read/': getreadSidebar(),
+  '/blog/': getblogSidebar(),
+  '/motto/': getMottoSidebar()
 
 }
 // 博客
@@ -151,8 +151,15 @@ function getMottoSidebar () {
         '2021/May/chapter6',
         '2021/May/chapter7',
         '2021/May/chapter8',
-        '2021/May/chapter9',
-        '2021/May/chapter10',
+      ]
+    },
+    {
+      title: '2021年6月',
+      collapsable: false,
+      children: [
+        '2021/May/chapter1',
+        '2021/May/chapter2',
+        '2021/May/chapter3',
       ]
     },
   ]
@@ -291,4 +298,4 @@ function getTsAxiosSidebar () {
   ]
 }
 
-module.exports =  barObj
+module.exports = barObj
