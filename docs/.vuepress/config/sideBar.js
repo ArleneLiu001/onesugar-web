@@ -34,6 +34,8 @@ function getblogSidebar () {
         'chapter18',
         'chapter19',
         'chapter20',
+        'chapter21',
+        'chapter22',
       ]
     },
     {
