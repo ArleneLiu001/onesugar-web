@@ -1,7 +1,6 @@
 ---
 home: true
 # heroImage: ./home.jpg
-footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
 ---
 <div class="base">
  <div v-for="(item,index) in lists" class="item" :key="index" @click="goLink(item)">
@@ -53,6 +52,7 @@ footer: '@2021 Arlene | 个人网站 | 鄂ICP备2020018075号'
   <div class="clear"></div>
 
 </div>
+<div class="footer">@2021 Arlene | 个人网站 | <a href="https://beian.miit.gov.cn" target="_blank" class="beian">鄂ICP备2020018075号-1</a></div>
 
 <script>
   import Clock from './clock'
