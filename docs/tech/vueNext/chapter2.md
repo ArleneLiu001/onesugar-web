@@ -2,8 +2,8 @@
 ##### 疑问？待解决
 在做类目模块时，需要动态获取每个类目框的dom进行滚动。想通过ref的方式，但是需要动态绑定ref值。
 例如:
-```html
- <ul class="kind-box-list"
+```js
+<ul class="kind-box-list"
         :id="`kindID`+level+ number"
         ref="kindID">
       <li class="kind-box-item"

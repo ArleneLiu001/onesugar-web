@@ -50,6 +50,17 @@ function getblogSidebar () {
         'CSS/chapter5',
       ]
     },
+    {
+      title: 'Node',
+      collapsable: false,
+      children: [
+        'Node/chapter1',
+        'Node/chapter2',
+        'Node/chapter3',
+        'Node/chapter4',
+        'Node/chapter5',
+      ]
+    },
   ]
 }
 // 教育
