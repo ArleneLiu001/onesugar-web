@@ -62,7 +62,8 @@ home: true
    },
   data(){
     return {
-      dayMessage:"我步入丛林<br>因为我希望生活有意义，<br>我希望活的深刻，<br>吸取生命中所有精华，<br>把非生命的一切都击溃。<br>以免当我生命终结，<br>发现自己从没活过。<br><br>----梭罗",
+      // dayMessage:"我步入丛林<br>因为我希望生活有意义，<br>我希望活的深刻，<br>吸取生命中所有精华，<br>把非生命的一切都击溃。<br>以免当我生命终结，<br>发现自己从没活过。<br><br>----梭罗",
+      dayMessage:"从前 我的爱复杂,动荡<br/>现在我只爱一些简单的事物<br/>一只其貌不扬的小狗<br/>或一朵深夜里突然绽放的小花儿<br/>就已带给我足够的惊喜 <br/>从前的我常常因爱而愤怒<br/>现在 我的肝火已被雨水带入潮湿的土地<br/>至于足球和诗歌,今后依然会是我的挚爱<br/>但已没有什么 可以再大过我的生命<br/>为了这份宁静 我已准备了半个世纪<br/>就这样爱着 度过余生",
       iconAbout:[{name:'git',icon:'el-icon-my-github',href:'https://github.com/ArleneLiu001/onesugar-web',},
       // {name:'zhi',icon:'el-icon-my-zhifubao'},
       {name:'qq',icon:'el-icon-my-qq',img:'/qq.jpg'},

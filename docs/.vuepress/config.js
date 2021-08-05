@@ -1,17 +1,17 @@
 const barObj = require('./config/sideBar.js');
 module.exports = {
-  head:[
+  head: [
     [
       'script',
-      {src:'/live2dw/lib/L2Dwidget.min.js',type:"text/javascript", charset:"UTF-8"},
+      { src: '/live2dw/lib/L2Dwidget.min.js', type: "text/javascript", charset: "UTF-8" },
     ],
     [
       'script',
-      {src:'//unpkg.com/valine/dist/Valine.min.js',type:"text/javascript", charset:"UTF-8"},
+      { src: '//unpkg.com/valine/dist/Valine.min.js', type: "text/javascript", charset: "UTF-8" },
     ],
     [
       'link',
-      {rel:'icon',href:'/logo.jpg'}
+      { rel: 'icon', href: '/logo.jpg' }
     ]
     // [
     //   'script',
@@ -45,9 +45,9 @@ module.exports = {
           { text: '博客', link: '/blog/chapter10' },
         ]
       },
-      { text: '教育', link: '/edu/chapter1',  },
+      { text: '教育', link: '/edu/chapter1', },
       { text: '阅读笔记', link: '/read/chapter1', },
-      { text: 'ts-axios', link: '/ts-axios/chapter1/' },
+      // { text: 'ts-axios', link: '/ts-axios/chapter1/' },
     ],
     sidebar: barObj,
     extraWatchFiles: [

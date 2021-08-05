@@ -361,11 +361,5 @@ button.animate(0, 0, 'uneasy') // error
 Argument of type '"uneasy"' is not assignable to parameter of type '"ease-in" | "ease-out" | "ease-in-out"'
 ```
 
-## 总结
-
-那么到这里，我们的 TypeScript 常用语法学习就告一段落了，当然 TypeScript 还有其他的语法我们并没有讲，我们只是讲了 TypeScript 的一些常用语法，你们把这些知识学会已经足以开发一般的应用了。如果你在使用 TypeScript 开发项目中遇到了其他的 TypeScript 语法知识，你可以通过 TypeScript 的[官网文档](https://www.typescriptlang.org/docs/home.html)学习。因为学基础最好的方法还是去阅读它的官网文档，敲上面的小例子。其实我们课程的基础知识结构也是大部分参考了官网文档，要记住学习一门技术的基础官网文档永远是最好的第一手资料。
-
-但是 TypeScript 的学习不能仅仅靠看官网文档，你还需要动手实践，在实践中你才能真正掌握 TypeScript。相信很多同学学习到这里已经迫不及待想要大展身手了，那么下面我们就开始把理论转换为实践，一起来用 TypeScript 重构 axios 吧！
-
 
 
