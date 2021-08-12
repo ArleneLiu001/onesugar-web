@@ -19,7 +19,7 @@ api：日志记录--》路由处理--》登录校验（redis）--》用户信息
 
  #### nodejs处理http请求
 实例：
-```
+```js
 var http = require('http');
 var querystring = require('querystring');
 var server = http.createServer(function (req, res) {
