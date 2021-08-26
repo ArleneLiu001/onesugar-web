@@ -47,7 +47,6 @@ module.exports = {
       },
       { text: '教育', link: '/edu/chapter1', },
       { text: '阅读笔记', link: '/read/chapter1', },
-      // { text: 'ts-axios', link: '/ts-axios/chapter1/' },
     ],
     sidebar: barObj,
     extraWatchFiles: [

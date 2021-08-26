@@ -27,7 +27,7 @@ home: true
          </el-popover>
           </div>
         </div>
-        <div class="aboutMe">关于我</div>
+        <!-- <div class="aboutMe">关于我</div> -->
     </div>
     <!--  day-motto -->
      <div class="person-info mt20">
@@ -75,11 +75,11 @@ home: true
       {name:'React',link:'/tech/react/chapter1/',icon:'el-icon-my-react',},
       {name:'博客',link:'/blog/chapter5',icon:'el-icon-my-bokeyuan',},],
       newList:[
-        {name:'关于孩子玩游戏',link:'/edu/chapter1',date:'2021-04-21',tag:5},
-        {name:'拖拽表格',link:'blog/chapter10',date:'2021-04-22',tag:1},
-        {name:'使用vue开发插件',link:'/blog/chapter5',date:'2021-04-20',tag:1},
-        {name:'uni-app项目打包合成App',link:'/blog/chapter3',date:'2021-04-20',tag:1},
-        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-04-20',tag:1}
+        {name:'拖拽表格',link:'blog/chapter10',date:'2021-03-22',tag:1},
+        {name:'使用vue开发插件',link:'/blog/chapter5',date:'2021-04-10',tag:1},
+        {name:'uni-app项目打包合成App',link:'/blog/chapter3',date:'2021-04-12',tag:1},
+        {name:'TypeScript',link:'/tech/ts/chapter1/',date:'2021-03-20',tag:1},
+         {name:'关于孩子玩游戏',link:'/edu/chapter1',date:'2021-04-21',tag:5},
       ],
       moreUrl:'/tech/js/chapter1/'
     }
