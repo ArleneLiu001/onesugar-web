@@ -1,16 +1,4 @@
 ### react基础知识
-####  题目
-react组件如何通讯  
-jsx本质是什么  
-context是什么，有何用途  
-shouldComponentUpdate的用途  
-描述redux单项数据流
-setState是同步还是异步
-
-##### setState
-#### jsx基本使用
-```
-```
 #### 事件
 ```js
 1.
@@ -33,7 +21,7 @@ event：
  #### 表单
  input ,textarea,通过value获取值
  checkbox，radio通过checked
- ```
+ ```js
  changeValue=(e)=>{
      this.setState({
          name:e.target.value
@@ -47,8 +35,8 @@ event：
  }
  ```
  #### 传递父组件的方法给子组件，让子组件去执行
- 父组件传了一个initList的方法给子组件<ComBox>,然后子组件可以执行父组件的方法
  ```js
+//  父组件传了一个initList的方法给子组件<ComBox>,然后子组件可以执行父组件的方法
  render() {
    return <div style={{width: "100%", padding: "20px", border: "1px solid #ccc", boxSizing: "border-box"}}>
         <h1>评论列表</h1>
@@ -73,7 +61,7 @@ this.props.reload()
  ```
 #### setState
 1. 不可变值：不能直接修改state值。（特别是数组可对象）
- ```
+ ```js
  this.setState({
      list:[...this.state.list,100]//追加
  })
@@ -85,7 +73,7 @@ this.props.reload()
  ```
  
  2. 可能是异步更新
- ```
+ ```js
  当setstate完成立即去打印最新的值时，发现还是原来的值，因为setstate在此时是异步的。
  解决：
  this.setState({
@@ -96,15 +84,14 @@ this.props.reload()
  注意：setState在自定义事件中或者setTimout时是同步的。
  ```
  3. 可能会被合并
- ```
+ 
 当setState传入对象时，在执行的时候会被合并。
 当setState传入函数时，执行时不会被合并。
 
- ```
  
  #### 组件生命周期
  1. 挂载卸载过程
- ```
+ ```js
  1. constructor():  完成了react数据的初始化，他有两个参数：props和context。当想在函数内部使用这两个参数时，需使用super()传入。
  2. componentWillMount()：  
  componentWillMount()一般用的比较少，它更多的是在服务端渲染时使用。它代表的过程是组件已经经历了constructor()初始化数据后，但是还未渲染DOM时。
@@ -113,11 +100,9 @@ this.props.reload()
  4. componentWillUnmount()  
  clear你在组建中所有的setTimeout,setInterval
 移除所有组建中的监听 removeEventListener
-
- 
  ```
  2. 更新过程
- ```
+ ```js
  2.1. componentWillReceiveProps (nextProps)
  在接受父组件改变后的props需要重新渲染组件时用到的比较多
 接受一个参数nextProps
@@ -146,7 +131,7 @@ render函数会插入jsx生成的dom结构，react会生成一份虚拟dom树，
 
  ```
  3. React新增的生命周期(个人补充)
- ```
+ ```js
  getDerivedStateFromProps(nextProps, prevState)
  代替componentWillReceiveProps()。
 老版本中的componentWillReceiveProps()方法判断前后两个 props 是否相同，如果不同再将新的 props 更新到相应的 state 上去。这样做一来会破坏 state 数据的单一数据源，导致组件状态变得不可预测，另一方面也会增加组件的重绘次数。
@@ -198,6 +183,6 @@ var a = React.createElement(
 关于JSX防范XSS攻击
 由于当你尝试通过{html}进行插入html代码时, React会自动将html转为字符串,故React可部分防止XSS攻击。
 
- #### react 和vue对比
+
  
  

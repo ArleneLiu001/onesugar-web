@@ -14,11 +14,9 @@ window.location.href=''
 window.onhashchange = 
 ```
 3. history:
-
 #### 动态路由
 this.props.match.params.id
 ```js
-组件里面嵌套路由：
 return(
 <div>
  components A
@@ -32,7 +30,6 @@ return(
  </Switch>
 </div>
 )
-
 exact 完全匹配
 ```
 
@@ -96,9 +93,7 @@ React.render((
 </Router>
 ),document.body)
 ```
-
 6.让UI组件从url中解耦出来。路由的时候，将组件的父组件去掉。方法：使用绝对路径。
-
 ```js
 React.render((
   <Router>
@@ -112,19 +107,16 @@ React.render((
     </Route>
   </Router>
 ), document.body)
-
 ```
-7.重定向页面： <Redirect> 
-    ```
-    <Redirect from="messages/:id" to="/messages/:id" />
-    ```
+7.重定向页面：
+```
+<Redirect from="messages/:id" to="/messages/:id" />
+```
 
 8.进入和离开的hook.使用场景：例如权限验证或者在路由跳转前将一些数据持久化保存起来。
-```
 Route 可以定义 onEnter 和 onLeave 两个 hook ，这些hook会在页面跳转确认时触发一次。
 onLeave hook：会在所有将离开的路由中触发，从最下层的子路由开始直到最外层父路由结束。
 onEnter Hook：会从最外层的父路由开始直到最下层子路由结束。
-```
 9.路由配置实例
 ```js
 const routeConfig = [
@@ -183,6 +175,4 @@ class A extends React.component{
     )
 }
 ```
-route的属性：
-1.render方法。已props为参数。
 

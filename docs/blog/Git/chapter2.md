@@ -28,3 +28,16 @@ git config --global user.email 'liu@usoftchina.com'
 //生成默认名字秘钥
 ssh-keygen -t rsa -C "xxx@qq.com"
 ```
+3. 将生成的公钥配置到gitlab的ssh里面。
+#### 具体实现配置github账号：
+1. 
+```
+git config --local user.name 'arlene'
+git config --local user.email 'arlene@163.com'
+
+```
+2. 其次：生成ssh秘钥
+```
+//生成自定义名字秘钥
+ssh-keygen -t rsa -C "xxx@qq.com"
+```
