@@ -16,7 +16,7 @@ Android可支持flv、m3u8的流、需要(flv.js/hls.js)转换,并且注意流�
 
 
 
-## 实时网络直播
+#### 实时网络直播
 技术栈：
 利用Docker挂载Nginx-rtmp(服务器直播流分发)+FFmpeg(推流)+Vue.js结合Video.js(播放器流播放)来实现实时网络直播
 
@@ -49,7 +49,7 @@ Http Live Streaming，由Apple公司定义的基于HTTP的流媒体实时传输�
 
 
 
-## 前端播放插件
+#### 前端播放插件
 #### Video.js：
 Video.js是一款web视频播放器，支持html5和flash两种播放方式。
 1. 插件下载地址：https://github.com/videojs/video.js/releases

@@ -2,7 +2,8 @@
 #### 版本回滚
 1. git log-->获取修改信息
 2. git reset --hard 版本号：获取想要的文件
-3. 注意：误删的文件需从代码库下载时：git checkout --文件名
+3. git reset --hard 撤销修改
+4. 注意：误删的文件需从代码库下载时：git checkout --文件名
 
 #### 配置邮箱和用户名
 git config --global

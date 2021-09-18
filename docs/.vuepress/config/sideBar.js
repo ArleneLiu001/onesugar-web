@@ -14,7 +14,7 @@ function getblogSidebar () {
   return [
     {
       title: '博客',
-      collapsable: false,
+      collapsable: true,
       children: [
         'chapter10',
         'chapter9',
@@ -44,6 +44,8 @@ function getblogSidebar () {
         'chapter27',
         'chapter28',
         'chapter29',
+        'chapter30',
+        'chapter31',
       ]
     },
     {

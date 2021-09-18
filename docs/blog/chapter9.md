@@ -1,5 +1,5 @@
-# 管理后台前端组件库选择
-## 常用的组件库一览表
+### 管理后台前端组件库选择
+#### 常用的组件库一览表
 组件名称 | 产品定位 | 显著优点  | 支持按需引入 | star数量  
 - | :-: | :-: | :-: | -:| -:
 iview | 服务于PC界面的中后台产品 | api简洁，组件干净优雅丰富 |  是 | 23k
@@ -12,9 +12,9 @@ vuetify | 支持SSR,SPA,PWA(渐进式web应用) | 在PC 端和移动端支持都
 bootstrap-vue |为 Vue.js 提供了 Bootstrap 4 组件和网格系统的实现 |对熟悉bootstrap的开发上手容易，样式自适应。 | 是| 11k
 Quasar Framework |是构建 Vue.js 响应式网站、PWA、混合移动应用和 Electron 应用的流行框架 |应用于桌面端，web页面，H5混合开发等。组件美观简洁，体积小 | 是| 14k
 
-## pc端可选择组件对比分析
+####  pc端可选择组件对比分析
 #### 综上表格并结合各类组件优缺点分析，可选择的PC端后台管理组件库有：iview，elementUI，Ant-Design-vue,bootstrap-vue，Quasar Framwork。
-### element VS  iview：
+####  element VS  iview：
 1. 组件代码角度：
 iview 比element 的api简洁。并采用了干净而优雅的设计。组件都很丰富。
 2. 项目优化角度：
@@ -27,14 +27,14 @@ iview 更为中规中矩
 4. 组件丰富性以及生态：
 element 生态更好，使用频率远超过iview ,element开发团队实力更强
 
-### Ant-Design-vue
+####  Ant-Design-vue
 Ant Design Vue是 Ant Design 3.X 的 Vue 实现，Ant Design Vue共享Ant Design of React设计工具体系，实现了所有Ant Design of React的组件，支持现代浏览器和 IE9 及以上。可以让熟悉Ant Design的在使用Vue时，很容易的上手。支持服务端渲染。支持Electron。缺点是成熟度上差 Element Ui 一些，社区不够完善。
-### vuetify
+####  vuetify
 明显缺点：文档不健全，用法略显复杂，需要功能需自己封装。
-### bootstrap-vue
+####  bootstrap-vue
 bootstrap-vue移动优先并基于flexbox弹性布局，用于构建响应式网页。支持按需组装，交互友好。并具备广泛和自动的 WAI-ARIA 可访问性友好支持。
 
-### Quasar Framework：
+####  Quasar Framework：
 Quasar组件丰富，样式优雅，支持诸如 HTML/CSS/JS 压缩、缓存清除、摇树优化（tree shaking）、源映射、代码分割和延迟加载、ES6 转码等功能。不管移动端还是桌面端，都能适配。
 使用场景：
 Electron+vue+Quasar开发桌面应用。
@@ -43,7 +43,7 @@ cordova/react/+vue+Quasar 开发hybrid Apps。
 上手门槛稍微高。一些组件样式（例如图片上传等），区别于iview,element等大众的显示模式。
 
 
-## 根据管理后台特点选择组件库
+####  根据管理后台特点选择组件库
 
  * 管理后台组件特点：以基础组件为主，复杂组件有：图片上传编辑操作，树形结构，目录结构，地址等。  
  对于以上基础组件，各组件库都支持。对于复杂组件，也都支持基础功能，如果需要个性化设置，都需要进行封装。
