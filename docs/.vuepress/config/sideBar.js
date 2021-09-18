@@ -75,6 +75,7 @@ function getblogSidebar () {
       collapsable: false,
       children: [
         'Git/chapter1',
+        'Git/chapter2',
       ]
     },
   ]
