@@ -231,9 +231,14 @@ function getMottoSidebar () {
       title: '2021年7月',
       collapsable: false,
       children: [
-        '2021/July/chapter1',
-        // '2021/July/chapter2',
-        // '2021/July/chapter3',
+        '2021/July/chapter1'
+      ]
+    },
+    {
+      title: '2022年1月',
+      collapsable: false,
+      children: [
+        '2022/January/chapter1'
       ]
     },
   ]

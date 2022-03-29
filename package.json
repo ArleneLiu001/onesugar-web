@@ -25,6 +25,7 @@
   "dependencies": {
     "ant-design-vue": "^1.7.4",
     "element-ui": "^2.15.1",
-    "live2d-widget-model-koharu": "^1.0.5"
+    "live2d-widget-model-koharu": "^1.0.5",
+    "vuepress": "^1.9.7"
   }
 }
