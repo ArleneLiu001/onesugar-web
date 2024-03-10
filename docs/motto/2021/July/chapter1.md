@@ -1,4 +1,4 @@
-### 2021年7月11日
+### 7月11日
 I went to the woods<br>
 because i wanted to live deliberately<br>
 i wanted to live deep and suck out all the marrow of life.<br>

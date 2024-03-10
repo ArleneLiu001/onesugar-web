@@ -10,7 +10,7 @@ var barObj = {
 
 }
 // 博客
-function getblogSidebar () {
+function getblogSidebar() {
   return [
     {
       title: '博客',
@@ -81,7 +81,7 @@ function getblogSidebar () {
   ]
 }
 // 教育
-function geteduSidebar () {
+function geteduSidebar() {
   return [
     {
       title: '教育熊孩子',
@@ -103,7 +103,7 @@ function geteduSidebar () {
   ]
 }
 //阅读
-function getreadSidebar () {
+function getreadSidebar() {
   return [
     {
       title: '阅读笔记',
@@ -119,12 +119,27 @@ function getreadSidebar () {
         'chapter8',
         'chapter9',
         'chapter10',
+        'chapter11',
+        'chapter12',
+        'chapter13',
+        'chapter14',
+        'chapter15',
+        'chapter16',
+        'chapter17',
+        'chapter18',
+        'chapter19',
+        'chapter20',
+        'chapter21',
+        'chapter22',
+        'chapter23',
+        'chapter24',
+        'chapter25',
       ]
     },
   ]
 }
 //tech
-function getTechSidebar () {
+function getTechSidebar() {
   return [
     {
       title: 'JS高级程序设计',
@@ -152,7 +167,7 @@ function getTechSidebar () {
   ]
 }
 // vue3
-function getvueNextSidebar () {
+function getvueNextSidebar() {
   return [
     {
       title: 'VUE3',
@@ -172,7 +187,7 @@ function getvueNextSidebar () {
   ]
 }
 //react  getreactSidebar
-function getreactSidebar () {
+function getreactSidebar() {
   return [
     {
       title: 'React',
@@ -188,10 +203,10 @@ function getreactSidebar () {
   ]
 }
 //座右铭
-function getMottoSidebar () {
+function getMottoSidebar() {
   return [
     {
-      title: '2021年3月',
+      title: '3月',
       collapsable: true,
       children: [
         '2021/March/chapter2',
@@ -199,7 +214,7 @@ function getMottoSidebar () {
       ]
     },
     {
-      title: '2021年4月',
+      title: '4月',
       collapsable: true,
       children: [
         '2021/April/chapter2',
@@ -214,7 +229,7 @@ function getMottoSidebar () {
       ]
     },
     {
-      title: '2021年5月',
+      title: '5月',
       collapsable: false,
       children: [
         '2021/May/chapter1',
@@ -228,7 +243,7 @@ function getMottoSidebar () {
       ]
     },
     {
-      title: '2021年7月',
+      title: '7月',
       collapsable: false,
       children: [
         '2021/July/chapter1',
@@ -238,7 +253,7 @@ function getMottoSidebar () {
     },
   ]
 }
-function getTsAxiosSidebar () {
+function getTsAxiosSidebar() {
   return [
     {
       title: '初识 TypeScript',
