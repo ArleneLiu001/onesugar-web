@@ -40,8 +40,8 @@ module.exports = {
         items: [
           { text: 'JS基础', link: './tech/js/chapter1' },
           { text: 'TypeScript', link: './tech/ts/chapter1/' },
-          { text: 'Vue3', link: '/tech/vueNext/chapter1' },
-          { text: 'React', link: '/tech/react/chapter1' },
+          // { text: 'Vue3', link: '/tech/vueNext/chapter1' },
+          // { text: 'React', link: '/tech/react/chapter1' },
           { text: '博客', link: '/blog/chapter10' },
         ]
       },
