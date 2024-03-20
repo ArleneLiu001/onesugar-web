@@ -46,7 +46,7 @@ home: true
     <a :href="item.link">{{item.name}}</a>
     <article-tag :tagType="item.tag"/>
   </div>
-  <div class="date-info">{{item.date}}</div>
+  <!-- <div class="date-info">{{item.date}}</div> -->
   </li>
   <div class="more"><a :href="moreUrl">更多文章...</a></div>
  </ul>
