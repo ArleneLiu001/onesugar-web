@@ -3,7 +3,7 @@ module.exports = {
   head: [
     [
       'script',
-      { src: '/blog/live2dw/lib/L2Dwidget.min.js', type: "text/javascript", charset: "UTF-8" },
+      { src: '/live2dw/lib/L2Dwidget.min.js', type: "text/javascript", charset: "UTF-8" },
     ],
     // [
     //   'script',
@@ -39,7 +39,7 @@ module.exports = {
         ariaLabel: '前端技术',
         items: [
           { text: 'JS基础', link: './tech/js/chapter1' },
-          { text: 'TypeScript', link: './tech/ts/chapter1' },
+          { text: 'TypeScript', link: './tech/ts/chapter1/' },
           { text: 'Vue3', link: '/tech/vueNext/chapter1' },
           { text: 'React', link: '/tech/react/chapter1' },
           { text: '博客', link: '/blog/chapter10' },
